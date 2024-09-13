@@ -1,0 +1,19 @@
+.glassy-table {
+  background: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Glow effect */
+  backdrop-filter: blur(10px); /* Glassy effect */
+}
+
+.glassy-table th,
+.glassy-table td {
+  color: #000; /* Ensure text is readable */
+}
+
+.glassy-table th {
+  background: rgba(0, 0, 0, 0.5); /* Darker background for headers */
+}
+
+.glassy-table td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Light border for readability */
+}

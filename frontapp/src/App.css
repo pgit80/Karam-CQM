@@ -1,0 +1,167 @@
+.s {
+  right: 50px;
+  bottom: 10px;
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+.vh-93 {
+  height: 93vh;
+}
+.vh-7 {
+  height: 7vh;
+}
+.scroll {
+  overflow: auto;
+}
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* .footer-address.address{
+    font-size: 10px;
+    color: white;
+    padding: 6px 0px;
+    box-sizing: border-box;
+} */
+
+a {
+  font-size: 17px;
+  color: aliceblue;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 0px;
+}
+a.hover {
+  color: brown;
+}
+
+.banner-text a {
+  background-color: crimson;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 35px;
+  display: inline-block;
+  border-radius: 50px;
+  margin-top: 15px;
+}
+.banner-gride a {
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: crimson;
+}
+.gride a {
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: crimson;
+  padding: 10px 20px;
+}
+.span {
+  text-decoration: underline;
+
+  text-shadow: crimson;
+  direction: unset;
+}
+
+h1 {
+  font-size: 70px;
+}
+/* p{
+    font-size: 22px;
+} */
+
+/* Global Presence Start CSS*/
+.col-md-4 h3 {
+  text-align: center;
+}
+
+.col-md-4 p {
+  font-size: 18px;
+  padding: 2px 2px 2px 2px;
+}
+.gride-item {
+  float: right;
+  margin-right: 220px;
+  color: #fff;
+  font-size: 100px;
+}
+.gride-item-global {
+  float: right;
+  margin-right: 210px;
+  margin-top: -22px;
+  color: #fff;
+}
+
+.gride-item1 {
+  float: right;
+  margin-right: 195px;
+  margin-top: -px;
+  color: #fff;
+}
+.gride-item-global-1 {
+  float: right;
+  margin-right: 100px;
+  margin-top: -25px;
+  color: #fff;
+}
+.gride-item-2 {
+  float: right;
+  margin-right: 238px;
+  margin-top: -px;
+  color: #fff;
+}
+.gride-item-global-2 {
+  float: right;
+  margin-right: 65px;
+  margin-top: -25px;
+  color: #fff;
+}
+.gride-item-3 {
+  float: right;
+  margin-right: 220px;
+  margin-top: 10px;
+  color: #fff;
+}
+.gride-item-global-3 {
+  float: right;
+  margin-right: 65px;
+  margin-top: -22px;
+  color: #fff;
+}
+.gride-item-4 {
+  float: right;
+  margin-right: 190px;
+  margin-top: 8px;
+  color: #fff;
+}
+.gride-item-global-4 {
+  float: right;
+  margin-right: 150px;
+  margin-top: -22px;
+  color: #fff;
+}
+.gride-item-5 {
+  float: right;
+  margin-right: 200px;
+  margin-top: 10px;
+  color: #fff;
+}
+.gride-item-global-5 {
+  float: right;
+  margin-right: 68px;
+  margin-top: -22px;
+  color: #fff;
+}
+
+.glass-effect {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+}
+
+/* Global Presence End CSS*/
+
+.row .col-md-6 {
+  background-image: -moz-linear-gradient(red, blue, yellow);
+}
