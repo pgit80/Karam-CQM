@@ -10,12 +10,12 @@ const Viewallpenquery = () => {
   const [count, setCount] = useState(1);
   let kuch;
   const getpenquery = async () => {
-    const userno = await fetch("http://localhost:8000");
+    const userno = await fetch("https://karam-cqm.vercel.app/");
     kuch = await userno.json();
     console.log(kuch[0]);
 
     try {
-      const response = await fetch("http://localhost:8000/ad/allpenquery");
+      const response = await fetch("https://karam-cqm.vercel.app/ad/allpenquery");
       const data = await response.json();
       if (data.msg === "Success") {
         setPenQuery(data.queries || []); // Ensure the fallback to an empty array if undefined
@@ -30,7 +30,7 @@ const Viewallpenquery = () => {
   const process = async (id) => {
     try {
       const status = { status: "processing" };
-      const response = await fetch(`http://localhost:8000/status/${id}`, {
+      const response = await fetch(`https://karam-cqm.vercel.app/status/${id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

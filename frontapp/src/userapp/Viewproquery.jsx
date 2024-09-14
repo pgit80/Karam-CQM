@@ -10,7 +10,9 @@ const Viewproquery = () => {
   const [proquery, setProquery] = useState([]);
   const getcomquery = async () => {
     try {
-      const response = await fetch(`http://localhost:8000/getproquery/${id}`);
+      const response = await fetch(
+        `https://karam-cqm.vercel.app/getproquery/${id}`
+      );
       const data = await response.json();
       if (data.msg === "Success") {
         setProquery(data.result);

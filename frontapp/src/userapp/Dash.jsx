@@ -14,7 +14,7 @@ const Dash = () => {
   const [isEditing, setIsEditing] = useState(false);
 
   const getUser = async () => {
-    const response = await fetch(`http://localhost:8000/${id}`);
+    const response = await fetch(`https://karam-cqm.vercel.app/${id}`);
     const data = await response.json();
     if (response.ok) {
       setFirstname(data.firstname);
@@ -28,7 +28,7 @@ const Dash = () => {
   };
 
   const handleSave = async () => {
-    const response = await fetch(`http://localhost:8000/${id}`, {
+    const response = await fetch(`https://karam-cqm.vercel.app/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

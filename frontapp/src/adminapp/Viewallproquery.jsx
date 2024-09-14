@@ -9,7 +9,7 @@ const Viewallproquery = () => {
   var [count, setCount] = useState(1);
 
   const getpenquery = async () => {
-    const response = await fetch("http://localhost:8000/ad/allproquery");
+    const response = await fetch("https://karam-cqm.vercel.app/ad/allproquery");
     const data = await response.json();
     if (data.msg === "Success") {
       setPenQuery(data.queries);
@@ -19,7 +19,7 @@ const Viewallproquery = () => {
 
   const process = async (id) => {
     const status = { status: "Com" };
-    const response = await fetch(`http://localhost:8000/status/${id}`, {
+    const response = await fetch(`https://karam-cqm.vercel.app/status/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
