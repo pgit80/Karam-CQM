@@ -23,7 +23,7 @@ const AddQuery = () => {
       status,
     };
 
-    const response = await fetch("https://karam-cqm.vercel.app/addquery", {
+    const response = await fetch("https://karam-cqm.onrender.com/addquery", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -13,7 +13,7 @@ const Adlogin = () => {
   const adlog = async (e) => {
     e.preventDefault();
     const ad = { username, password };
-    const response = await fetch("https://karam-cqm.vercel.app/adlogin", {
+    const response = await fetch("https://karam-cqm.onrender.com/adlogin", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

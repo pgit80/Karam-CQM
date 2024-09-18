@@ -8,7 +8,7 @@ const EditQuery = ({ queryId, initialData, onCancel, onSave }) => {
   const handleSave = async () => {
     try {
       const response = await fetch(
-        `https://karam-cqm.vercel.app/updatequery/${queryId}`,
+        `https://karam-cqm.onrender.com/updatequery/${queryId}`,
         {
           method: "PATCH",
           headers: {

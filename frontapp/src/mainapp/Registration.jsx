@@ -16,7 +16,7 @@ const Registration = () => {
   const regcode = async (e) => {
     e.preventDefault();
     const user = { firstname, lastname, email, password };
-    const response = await fetch("https://karam-cqm.vercel.app/", {
+    const response = await fetch("https://karam-cqm.onrender.com/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

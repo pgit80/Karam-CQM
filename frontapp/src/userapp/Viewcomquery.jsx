@@ -11,7 +11,7 @@ const Viewcomquery = () => {
   const getproquery = async () => {
     try {
       const response = await fetch(
-        `https://karam-cqm.vercel.app/getcomquery/${id}`
+        `https://karam-cqm.onrender.com//getcomquery/${id}`
       );
       const data = await response.json();
       if (data.msg === "Success") {

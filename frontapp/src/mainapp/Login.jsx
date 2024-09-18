@@ -14,7 +14,7 @@ const Login = () => {
   const logcode = async (e) => {
     e.preventDefault();
     const user = { email, password };
-    const response = await fetch("https://karam-cqm.vercel.app/login", {
+    const response = await fetch("https://karam-cqm.onrender.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

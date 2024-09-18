@@ -14,7 +14,9 @@ const ViewPenQuery = () => {
 
   const getpenquery = async () => {
     try {
-      const response = await fetch(`https://karam-cqm.vercel.app/getpenquery/${id}`);
+      const response = await fetch(
+        `https://karam-cqm.onrender.com/getpenquery/${id}`
+      );
       const data = await response.json();
       if (data.msg === "Success") {
         setPenQuery(data.result);

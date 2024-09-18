@@ -14,7 +14,7 @@ const Dash = () => {
   const [isEditing, setIsEditing] = useState(false);
 
   const getUser = async () => {
-    const response = await fetch(`https://karam-cqm.vercel.app/${id}`);
+    const response = await fetch(`https://karam-cqm.onrender.com/${id}`);
     const data = await response.json();
     if (response.ok) {
       setFirstname(data.firstname);
@@ -28,7 +28,7 @@ const Dash = () => {
   };
 
   const handleSave = async () => {
-    const response = await fetch(`https://karam-cqm.vercel.app/${id}`, {
+    const response = await fetch(`https://karam-cqm.onrender.com/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
