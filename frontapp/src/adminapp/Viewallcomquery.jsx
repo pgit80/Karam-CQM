@@ -9,7 +9,7 @@ const Viewallcomquery = () => {
   var [count, setCount] = useState(1);
 
   const getpenquery = async () => {
-    const response = await fetch("https://karam-cqm.vercel.app/ad/allcomquery");
+    const response = await fetch("https://karam-cqm.onrender.com/ad/allcomquery");
     const data = await response.json();
     if (data.msg === "Success") {
       setPenQuery(data.queries);

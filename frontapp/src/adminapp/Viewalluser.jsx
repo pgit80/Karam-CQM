@@ -10,7 +10,7 @@ const Viewalluser = () => {
 
   const getuser = async () => {
     try {
-      const response = await fetch("https://karam-cqm.vercel.app/");
+      const response = await fetch("https://karam-cqm.onrender.com/");
       const data = await response.json();
       if (data) {
         setUser(data);

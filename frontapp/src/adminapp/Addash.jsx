@@ -13,23 +13,29 @@ const Addash = () => {
 
   const total = async () => {
     try {
-      const uresponse = await fetch("https://karam-cqm.vercel.app/");
+      const uresponse = await fetch("https://karam-cqm.onrender.com/");
       const ures = await uresponse.json();
       setU(ures.length);
 
-      const qresponse = await fetch("https://karam-cqm.vercel.app/getquery");
+      const qresponse = await fetch("https://karam-cqm.onrender.com/getquery");
       const qres = await qresponse.json();
       setQ(qres.length);
 
-      const penresponse = await fetch("https://karam-cqm.vercel.app/ad/allpenquery");
+      const penresponse = await fetch(
+        "https://karam-cqm.onrender.com/ad/allpenquery"
+      );
       const penres = await penresponse.json();
       setPen(penres.queries.length || 0);
 
-      const proresponse = await fetch("https://karam-cqm.vercel.app/ad/allproquery");
+      const proresponse = await fetch(
+        "https://karam-cqm.onrender.com/ad/allproquery"
+      );
       const prores = await proresponse.json();
       setPro(prores.queries.length || 0);
 
-      const comresponse = await fetch("https://karam-cqm.vercel.app/ad/allcomquery");
+      const comresponse = await fetch(
+        "https://karam-cqm.onrender.com/ad/allcomquery"
+      );
       const comres = await comresponse.json();
       setCom(comres.queries.length || 0);
     } catch (error) {
