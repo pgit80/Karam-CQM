@@ -49,7 +49,7 @@ adRoute.get("/ad/allproquery", async (req, res) => {
 // Route to get all completed queries
 adRoute.get("/ad/allcomquery", async (req, res) => {
   try {
-    const queries = await Query.find({ status: "completed" });
+    const queries = await Query.find({ status: "com" });
     return res.send({ msg: "Success", queries: queries });
   } catch (error) {
     return res

@@ -21,7 +21,7 @@ queryRoute.get("/getproquery/:id", async (req, res) => {
 
 queryRoute.get("/getcomquery/:id", async (req, res) => {
   const id = req.params.id;
-  const result = await Query.find({ uid: id, status: "completed" });
+  const result = await Query.find({ uid: id, status: "com" });
   res.send({ msg: "Success", result: result });
 });
 
